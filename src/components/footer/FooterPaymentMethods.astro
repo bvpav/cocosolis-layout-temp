@@ -1,0 +1,39 @@
+---
+import FooterPaymentMethodItem from "./FooterPaymentMethodItem.astro";
+---
+
+<div
+  class="flex flex-col items-center justify-center gap-2 text-center sm:gap-4 sm:px-4"
+>
+  <h2 class="text-xl font-bold sm:text-2xl">Гарантирано сигурно плащане с:</h2>
+  <ul class="flex w-full max-w-[500px] justify-center gap-2 sm:gap-3">
+    <FooterPaymentMethodItem
+      name="Visa"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="Mastercard"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="Discover"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="PayPal"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="Amex"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="Google Pay"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+    <FooterPaymentMethodItem
+      name="Apple Pay"
+      image={{ src: "https://placehold.co/75x50" }}
+    />
+  </ul>
+</div>

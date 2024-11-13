@@ -1,0 +1,28 @@
+---
+const links = [
+  { name: "Продукти", href: "#" },
+  { name: "CLUB", href: "#" },
+  { name: "Контакти", href: "#" },
+  { name: "За нас", href: "#" },
+  { name: "Правила за закупуване", href: "#" },
+  { name: "Условия за ползване на сайта", href: "#" },
+  { name: "Условия на Програма за лоялност", href: "#" },
+  { name: "Политика за бисквитки", href: "#" },
+  { name: "Политика за връщане", href: "#" },
+  { name: "Поръчка и доставка", href: "#" },
+  { name: "Политика за защита на лични данни", href: "#" },
+];
+---
+
+<nav class="space-y-4">
+  <h2 class="text-xl font-bold">Полезни връзки</h2>
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href}>{link.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

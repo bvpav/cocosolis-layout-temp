@@ -1,0 +1,39 @@
+---
+import { Menu, Search, ShoppingCart, User } from "lucide-astro";
+
+export type Props = {
+  class?: string;
+  pages: string[];
+};
+---
+
+<nav class={Astro.props.class}>
+  <ul class="flex gap-5">
+    {
+      Astro.props.pages.map((page) => (
+        <li>
+          <a href="#">{page}</a>
+        </li>
+      ))
+    }
+    <li>
+      <button>
+        <Menu />
+      </button>
+    </li>
+    <li>
+      <button>
+        <Search />
+      </button>
+    </li>
+    <li>
+      <button>
+        <ShoppingCart />
+      </button>
+    </li>
+    <li class="flex gap-2">
+      <User />
+      <span class="hidden sm:block">Влез в профил</span>
+    </li>
+  </ul>
+</nav>

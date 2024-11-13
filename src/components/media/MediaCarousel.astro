@@ -1,0 +1,58 @@
+---
+const media = [
+  {
+    name: "Cosmopolitan",
+    image: "https://placehold.co/140x25",
+  },
+  {
+    name: "Vogue",
+    image: "https://placehold.co/92x24",
+  },
+  {
+    name: "Elle",
+    image: "https://placehold.co/71x24",
+  },
+  {
+    name: "marie claire",
+    image: "https://placehold.co/65x21",
+  },
+  {
+    name: "InStyle",
+    image: "https://placehold.co/111x26",
+  },
+  {
+    name: "Grazia",
+    image: "https://placehold.co/87x27",
+  },
+  {
+    name: "Forbes",
+    image: "https://placehold.co/108x27",
+  },
+  {
+    name: "Vanity Fair",
+    image: "https://placehold.co/124x26",
+  },
+];
+---
+
+<section
+  class="dark group flex h-11 overflow-hidden bg-rose-950 py-1 text-white hover:cursor-cell"
+>
+  {
+    Array.from({ length: 3 }).map((_, i) => (
+      <div
+        class="motion-safe:animate-scroll flex h-full shrink-0 items-center gap-2 pe-32 group-hover:[animation-play-state:paused]"
+        aria-hidden={i > 0}
+      >
+        <p class="shrink-0 uppercase">Медиите говорят за нас</p>
+        <ul class="flex h-full shrink-0 gap-2">
+          {media.map(({ name, image }) => (
+            <li>
+              <img class="h-full" src={image} alt={name} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</section>

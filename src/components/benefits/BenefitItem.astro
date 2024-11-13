@@ -1,0 +1,11 @@
+<article class="flex gap-2">
+  <div
+    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white bg-rose-500 text-white"
+  >
+    <slot name="icon" />
+  </div>
+  <div class="text-rose-700">
+    <h1 class="text-xl"><slot name="title" /></h1>
+    <p class="font-light"><slot name="description" /></p>
+  </div>
+</article>

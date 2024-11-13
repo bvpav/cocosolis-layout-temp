@@ -1,0 +1,38 @@
+---
+import { Heart, Leaf, PawPrint } from "lucide-astro";
+import BenefitItem from "./BenefitItem.astro";
+---
+
+<section class="flex min-h-[60vh] bg-rose-200">
+  <div class="flex w-full flex-col justify-center gap-3 px-7 py-4 md:px-24">
+    <BenefitItem>
+      <Leaf slot="icon" />
+      <span slot="title">Натурални и Био</span>
+      <span slot="description">
+        Продуктите на COCOSОLIS са винаги натурални и създадени само с
+        най-висококачествени био, студено пресовани масла.
+      </span>
+    </BenefitItem>
+    <BenefitItem>
+      <Heart slot="icon" />
+      <span slot="title">Създадени с любов</span>
+      <span slot="description">
+        Създадени с любов и уважение към хората и природата. Нежни към кожата.
+        Притежаващи аромат, в който ще се влюбите
+      </span>
+    </BenefitItem>
+    <BenefitItem>
+      <PawPrint slot="icon" />
+      <span slot="title">С отношение</span>
+      <span slot="description">
+        Без наличие на парабени, оцветители, минерални и синтетични масла и
+        разбира се, без тестване върху животни.
+      </span>
+    </BenefitItem>
+  </div>
+
+  <div
+    class="hidden w-full bg-[url(https://placehold.co/960x720)] bg-cover bg-center md:flex"
+  >
+  </div>
+</section>

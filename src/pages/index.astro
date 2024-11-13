@@ -1,0 +1,54 @@
+---
+import FeaturedProductHero from "../components/hero/FeaturedProductHero.astro";
+import Benefits from "../components/benefits/Benefits.astro";
+import ProductListingSection from "../components/product/listings/ProductListingSection.astro";
+import Layout from "../layouts/Layout.astro";
+import NewsletterSection from "../components/newsletter/NewsletterSection.astro";
+import ReviewsSection from "../components/reviews/ReviewsSection.astro";
+import MediaCarousel from "../components/media/MediaCarousel.astro";
+---
+
+<Layout title="COCOSOLIS България">
+  <main>
+    <FeaturedProductHero />
+    <ProductListingSection
+      title="Коса"
+      description="Натурални продукти за силна, гъста и бляскава коса"
+      variant="accent"
+    />
+    <MediaCarousel />
+    <ProductListingSection
+      title="Кожа"
+      description="Серията SKIN за перфектна кожа, без несъвършенства."
+      variant="primary"
+    />
+    <ProductListingSection
+      title="Лице"
+      description="Високоефективни натурални продукти за подмладена и сияйна кожа"
+      variant="accent"
+    />
+    <ProductListingSection
+      title="Автобронзанти"
+      description="За перфектен тен, без да е необходимо слънце. Постигнете естествено изглеждащ, равномерен, наситен, бронзов тен."
+      variant="primary"
+    />
+    <ProductListingSection
+      title="Тен"
+      description="Натурални, био масла за супер тен и сияйна кожа"
+      variant="accent"
+    />
+    <ProductListingSection
+      title="Блясък"
+      description="Натурални продукти за елегантен блясък и грижа за кожата"
+      variant="primary"
+    />
+    <ProductListingSection
+      title="SPF"
+      description="Натурални, био слънцезащитни лосиони"
+      variant="accent"
+    />
+    <Benefits />
+    <NewsletterSection />
+    <ReviewsSection />
+  </main>
+</Layout>

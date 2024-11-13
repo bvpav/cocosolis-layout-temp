@@ -1,0 +1,17 @@
+---
+import HeaderBanner from "./HeaderBanner.astro";
+import HeaderLogo from "./HeaderLogo.astro";
+import HeaderDesktopNav from "./HeaderDesktopNav.astro";
+---
+
+<header class="sticky top-0 z-10 bg-white">
+  <HeaderBanner />
+
+  <div class="flex items-center justify-center gap-10 border-b">
+    <HeaderLogo />
+    <HeaderDesktopNav
+      class="hidden md:block"
+      pages={["Начало", "Продукти", "Club", "За нас", "Контакти"]}
+    />
+  </div>
+</header>

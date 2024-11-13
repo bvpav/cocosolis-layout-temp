@@ -1,0 +1,16 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+export type Props = {
+  name: string;
+  image: HTMLAttributes<"img">;
+};
+
+const { name, image } = Astro.props;
+---
+
+<li
+  class="flex w-full items-center justify-center overflow-clip rounded-md bg-white shadow-md"
+>
+  <img {...image} alt={name} class:list={["w-full", image.class]} />
+</li>

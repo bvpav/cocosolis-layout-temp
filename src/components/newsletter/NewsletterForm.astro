@@ -1,0 +1,35 @@
+---
+import Button from "../ui/Button.astro";
+---
+
+<form class="space-y-2">
+  <div class="space-y-1">
+    <p class="text-xl leading-none">
+      <strong>Нека бъдем приятели!</strong>
+      <span
+        >Абонирайте се, за да бъдете сред първите, които ще научат за нашите
+        нови продукти и промоции:</span
+      >
+    </p>
+    <input
+      type="email"
+      class="w-full p-3 text-sm italic text-gray-500"
+      placeholder="твоят имейл адрес"
+    />
+  </div>
+  <p class="text-sm">
+    Моля, поставете отметка в квадратчето по-долу, за да можете да се
+    присъедините.
+  </p>
+  <label class="block text-sm"
+    ><input type="checkbox" />
+    <span
+      >Съгласен/на съм предоставеният от мен имейл да бъде използван, за да
+      получавам известия за новости, подаръци и бъдещи промоции, свързани с
+      продуктите COCOSOLIS, съгласно <a href="#" class="underline"
+        >Общите условия за ползване на сайта</a
+      > и <a href="#" class="underline">Политика за личните данни</a>. *</span
+    ></label
+  >
+  <Button disabled>Влез в клуба</Button>
+</form>
